@@ -14,12 +14,12 @@
 	position: relative;
 	z-index: 1;
     width: 100vw;
-    height: 92vh;
+    height: 100vh;
 }
 
 /*Image Background*/
 .start-container {
-    min-height: 92vh;
+    min-height: 100vh;
 	width: 100%;
 	display: flex;
 	align-items: center;
@@ -30,7 +30,6 @@ img {
 	width: 100%;
 	object-fit: cover;
 }
-
 
 #hero::after {
 	content: '';
@@ -55,31 +54,73 @@ img {
     align-items: center;
     flex-direction: column;
     width: 100vw;
+	height: 100vh;
+	overflow-y: scroll;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 992px) {
 	.hero_txt {
-		font-family: 'poppins', sans-serif;
-		color: rgba(255, 255, 255, 0.575);
 		text-align: center;
 		background-color: rgba(0, 0, 0, 0.411);
 		width: 45vw;
 		padding: 2vw;
 		border-radius: 40px 10px 40px 10px;
+		z-index: 1;
 	}
 	
 	.hero_txt h1 {
 		font-family: 'Sacramento', sans-serif;
 		color: white;
-		font-size: 2vw;
+		font-size: 45px;
+	}
+
+	.hero_txt p {
+		font-family: 'poppins', sans-serif;
+		color: rgba(255, 255, 255, 0.63);
 	}
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 991px) {
+	.hero_txt {
+		text-align: center;
+		background-color: rgba(0, 0, 0, 0.411);
+		width: 70vw;
+		padding: 2vw;
+		border-radius: 40px 10px 40px 10px;
+		z-index: 1;
+	}
+	
+	.hero_txt h1 {
+		font-family: 'Sacramento', sans-serif;
+		color: white;
+		font-size: 45px;
+	}
 
+	.hero_txt p {
+		font-family: 'poppins', sans-serif;
+		color: rgba(255, 255, 255, 0.63);
+	}
 }
 
-@media screen and (min-width: 24.375em) {
+@media screen and (max-width: 576px) {
+	.hero_txt {
+		text-align: center;
+		background-color: rgba(0, 0, 0, 0.411);
+		width: 80vw;
+		padding: 2vw;
+		border-radius: 40px 10px 40px 10px;
+		z-index: 1;
+	}
+	
+	.hero_txt h1 {
+		font-family: 'Sacramento', sans-serif;
+		color: white;
+		font-size: 45px;
+	}
 
+	.hero_txt p {
+		font-family: 'poppins', sans-serif;
+		color: rgba(255, 255, 255, 0.63);
+	}
 }
 
