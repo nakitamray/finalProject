@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+
+    <link rel="stylesheet" type="text/css" href="/mystyles.css">
+    <link rel="stylesheet" type="text/css" href="/navbar/navbar.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h4>
+                <a class="a" href="/index.html">Space Exploration</a>
+            </h4>
+        </div>
+        </div class = "pages">
+            <ul class = "nav-links">
+                <li class = "nav_item">
+                    <a href = "gallery.html" class = "a nav_link activepage">Gallery</a>
+                </li>
+                <li class = "nav_item">
+                    <a href = "animation.html" class = "a nav_link">Animation</a>
+                </li>
+                <li class = "nav_item">
+                    <a href = "contact.html" class = "a nav_link">Contact</a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <div id = "gallery_content">
+        <div class = "hero2">
+            <div id="slider">
+                <p class="control_next"><i class="fas fa-angle-right"></i></p>
+                <p class="control_prev"><i class="fas fa-angle-left"></i></p>
+                <ul>
+                    <li class="slide1">
+                            <div class="slider-title-wrapper">
+                                <h3 class="slider-title"><span class="slider-title-h3">Sputnik</span>
+                        <span class="slider-subtitle">October 4, 1957: Union of Soviet Socialist Republics (U.S.S.R.) <br>
+                                launched Sputnik, the first artificial satellite to orbit Earth</span></h3>
+                            </div>
+                            <img src="/images/sputnik.jpg" alt="Sputnik">
+                    </li>
+                    <li class="slide2">
+                            <div class="slider-title-wrapper">
+                                <h3 class="slider-title"><span class="slider-title-h3">Man on the Moon</span>
+                                <span class="slider-subtitle">1969: On Apollo 11, the US sent the first astronauts to the Moon,<br>
+                                     and Neil Armstrong became the first human to set foot on its surface</span></h3>
+                            </div>
+                        <img src="/images/moon_landing.jpg" alt="1969 Moon Landing">
+                    </li>
+                    <li class="slide3">
+                            <div class="slider-title-wrapper">
+                                <h3 class="slider-title"><span class="slider-title-h3">International Space Station</span>
+                                <span class="slider-subtitle">1998: The result of unprecedented scientific and engineering collaboration <br>
+                                    among five space agencies representing 15 countries</span></h3>
+                            </div>
+                            <img src="/images/iss.png" alt="International Space Station">
+                    </li>
+                    <li class="slide4">
+                            <div class="slider-title-wrapper">
+                                <h3 class="slider-title"><span class="slider-title-h3">Perserverance Rover</span>
+                                <span class="slider-subtitle">2020: Car-sized Mars rover designed to explore the crater Jezero on Mars, <br>
+                                    manufactured by the Jet Propulsion Laboratory</span></h3>
+                            </div>
+                        <img src="/images/perserverance.jpg" alt="Perserverance">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <section id = "space">
+        <div class = "img-gallery">
+            <img class = "images" src="/images/onmoon.jpg">
+            <img class = "images" src="/images/astronout.jpg">
+            <img class = "images" src="/images/earth.jpg">
+            <img class = "images" src="/images/moon2.jpg">
+            <img class = "images" src="/images/saturn.jpg">
+            <img class = "images" src="/images/stars.jpg">
+            <img class = "images" src="/images/galaxy.jpg">
+            <img class = "images" src="/images/spitzer.jpg">
+        </div>
+    </section>
+
+      <script>
+        jQuery(document).ready(function ($) {
+        
+        // This is for the auto sliding
+        setInterval(function () {
+            moveRight();
+        }, 3000);
+        
+        //variables
+        var slideCount = $('#slider ul li').length;
+        var slideWidth = $('#slider ul li').width();
+        var slideHeight = $('#slider ul li').height();
+        var sliderUlWidth = slideCount * slideWidth;
+
+        $('#slider').css({ width: slideWidth, height: slideHeight });
+
+        $('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+
+        $('#slider ul li:last-child').prependTo('#slider ul');
+
+        function moveLeft() {
+            $('#slider ul').animate({
+                left: + slideWidth
+            }, 300, function () {
+                $('#slider ul li:last-child').prependTo('#slider ul');
+                $('#slider ul').css('left', '');
+            });
+        };
+
+        function moveRight() {
+            $('#slider ul').animate({
+                left: - slideWidth
+            }, 300, function () {
+                $('#slider ul li:first-child').appendTo('#slider ul');
+                $('#slider ul').css('left', '');
+            });
+        };
+
+        $('.control_prev').click(function () {
+            moveLeft();
+        });
+
+        $('.control_next').click(function () {
+            moveRight();
+        });
+
+        });
+      </script>
+
+<script src="navbar/navbar.js"></script>
+</body>
+</html>
