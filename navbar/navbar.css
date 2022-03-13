@@ -4,6 +4,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow: overlay;
+}
+
+::-webkit-scrollbar {
+    background: transparent;
+    width: 0.8vw;
+    z-index: -1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(rgb(0, 18, 182), rgb(180, 0, 0));
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-corner {
+    border-radius: 10px;
+    background-color: lightgray;
 }
 
 /*Nav Bar Styling*/

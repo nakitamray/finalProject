@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Bodoni+Moda&family=DM+Serif+Display&family=Major+Mono+Display&family=Montserrat&family=Neonderthaw&family=Playfair+Display&family=Poppins&family=Sacramento&family=Smooch+Sans:wght@100&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Hero Section */
+.container-snap {
+	background-image: url(/images/mars_horizon.jpg);
+	background-size: cover;
+	background-position: top;
+	position: relative;
+	z-index: 1;
+    width: 100vw;
+}
+
+/*Image Background*/
+.start-container {
+    min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+#hero::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	opacity: 0.5;
+	z-index: -1;
+}
+#hero .hero {
+	margin: 0 auto;
+	padding: 0 3vw;
+	justify-content: flex-start;
+}
+
+.container-snap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+	height: 100vh;
+}
+
+
+@media only screen and (min-width: 992px) {
+	.hero_txt {
+		text-align: center;
+		background-color: rgba(0, 0, 0, 0.411);
+		width: 45vw;
+		padding: 2vw;
+		border-radius: 40px 10px 40px 10px;
+		z-index: 1;
+	}
+	
+	.hero_txt h1 {
+		font-family: 'Sacramento', sans-serif;
+		color: white;
+		font-size: 45px;
+	}
+
+	.hero_txt p {
+		font-family: 'poppins', sans-serif;
+		color: rgba(255, 255, 255, 0.63);
+	}
+}
+
+
+@media only screen and (max-width: 991px) {
+	.hero_txt {
+		text-align: center;
+		background-color: rgba(0, 0, 0, 0.411);
+		width: 70vw;
+		padding: 2vw;
+		border-radius: 40px 10px 40px 10px;
+		z-index: 1;
+	}
+	
+	.hero_txt h1 {
+		font-family: 'Sacramento', sans-serif;
+		color: white;
+		font-size: 45px;
+	}
+
+	.hero_txt p {
+		font-family: 'poppins', sans-serif;
+		color: rgba(255, 255, 255, 0.63);
+	}
+}
+
+
+@media screen and (max-width: 576px) {
+	.hero_txt {
+		text-align: center;
+		background-color: rgba(0, 0, 0, 0.411);
+		width: 80vw;
+		padding: 2vw;
+		border-radius: 40px 10px 40px 10px;
+		z-index: 1;
+	}
+	
+	.hero_txt h1 {
+		font-family: 'Sacramento', sans-serif;
+		color: white;
+		font-size: 45px;
+	}
+
+	.hero_txt p {
+		font-family: 'poppins', sans-serif;
+		color: rgba(255, 255, 255, 0.63);
+	}
+
+}
+
