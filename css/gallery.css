@@ -160,7 +160,7 @@ img {
 
     .images:hover {
 		transform: scaleX(1.03) scaleY(1.03);
-        box-shadow: 0 6px 10px 0 rgba(16, 19, 63, 0.71);
+        box-shadow: 0 6px 15px 0 rgba(11, 15, 75, 0.71);
 	}
 
     .images {
