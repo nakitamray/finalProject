@@ -3,7 +3,7 @@
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
 
-    <link rel="stylesheet" type="text/css" href="/mystyles.css">
+    <link rel="stylesheet" type="text/css" href="/css/gallery.css">
     <link rel="stylesheet" type="text/css" href="/navbar/navbar.css">
 
     <meta charset="UTF-8">
@@ -101,7 +101,7 @@
         // This is for the auto sliding
         setInterval(function () {
             moveRight();
-        }, 3000);
+        }, 3500);
         
         //variables
         var slideCount = $('#slider ul li').length;
@@ -118,7 +118,7 @@
         function moveLeft() {
             $('#slider ul').animate({
                 left: + slideWidth
-            }, 300, function () {
+            }, 400, function () {
                 $('#slider ul li:last-child').prependTo('#slider ul');
                 $('#slider ul').css('left', '');
             });
@@ -127,7 +127,7 @@
         function moveRight() {
             $('#slider ul').animate({
                 left: - slideWidth
-            }, 300, function () {
+            }, 400, function () {
                 $('#slider ul li:first-child').appendTo('#slider ul');
                 $('#slider ul').css('left', '');
             });
