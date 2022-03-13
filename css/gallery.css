@@ -147,6 +147,7 @@ img {
 
 	.img-gallery {
         padding-top: 2vw;
+        padding-bottom: 2vw;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -154,7 +155,13 @@ img {
         align-items: stretch;
         align-content: space-around;
         gap: 2vw;
+        background-color: rgb(26, 30, 41);
     }
+
+    .images:hover {
+		transform: scaleX(1.03) scaleY(1.03);
+        box-shadow: 0 6px 10px 0 rgba(16, 19, 63, 0.71);
+	}
 
     .images {
         height: 70vh;
