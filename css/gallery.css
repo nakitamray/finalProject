@@ -45,7 +45,7 @@ img {
 		position: relative;
 		overflow: hidden;
 		margin: 4em;
-		box-shadow: 0 6px 103px 0 rgba(0, 0, 0, .71);
+		box-shadow: 0 6px 150px 0 rgba(0, 0, 0, .71);
 		transition: transform .3s cubic-bezier(.175,.885,.32,1.275),-webkit-transform .3s cubic-bezier(.175,.885,.32,1.275);
 	}
 	#slider:hover {
