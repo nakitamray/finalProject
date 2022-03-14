@@ -109,8 +109,7 @@ nav .activepage {
         padding-bottom: 5vh;
         height: 92vh;
         top: 8vh;
-        background-color: #171717b2;
-        opacity: 0.8;
+        background-color: #171717bb;
         display: flex;
         flex-direction: column;
         align-items: center;
