@@ -118,9 +118,22 @@
     40px 10px 0px -15px #5c01014d;
   }
 
+  .planet_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .paragraph {
+    padding-top: 3vw;
     color: white;
     font-family: 'poppins';
+    align-self: center;
+  }
+
+  .paragraph h2 {
+    font-family: 'Sacramento', sans-serif;
+    font-size: 40px;
   }
 
 @media only screen and (min-width: 992px) {
