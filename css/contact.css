@@ -1,5 +1,5 @@
 /* Font Families */
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Bodoni+Moda&family=DM+Serif+Display&family=Major+Mono+Display&family=Montserrat&family=Neonderthaw&family=Playfair+Display&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Bodoni+Moda&family=DM+Serif+Display&family=Major+Mono+Display&family=Montserrat&family=Neonderthaw&family=Playfair+Display&family=Poppins&family=Sacramento&family=Smooch+Sans:wght@100&display=swap');
 
 /* Universal CSS properties */
 * {
@@ -7,6 +7,7 @@
     padding: 0;
     margin: 0;
 }
+
 
 /* Medium devices (landscape tablets, 768px and down) */
 @media only screen and (max-width: 650px) {
@@ -19,6 +20,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin-top: 8vh;
         height: 100vh;
         width: 100vw;
         z-index: 2;
@@ -41,7 +43,7 @@
     }
 
     h1, h2 {
-        font-family: "Sacramento";
+        font-family: 'Sacramento', sans-serif;
         color: black;
     }
 
@@ -168,7 +170,7 @@
     }
 
     h1, h2 {
-        font-family: "Sacramento";
+        font-family: 'Sacramento', sans-serif;
         color: black;
     }
 
@@ -297,7 +299,7 @@
     }
 
     h1, h2 {
-        font-family: "Sacramento";
+        font-family: 'Sacramento', sans-serif;
         color: black;
     }
 
@@ -435,7 +437,7 @@
     }
 
     h1, h2 {
-        font-family: "Scaramento";
+        font-family: 'Sacramento', sans-serif;
         color: black;
     }
 
