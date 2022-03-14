@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+
+    <link rel="stylesheet" type="text/css" href="/css/contact.css">
+    <link rel="stylesheet" type="text/css" href="/navbar/navbar.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h4>
+                <a class="a" href="/index.html">Space Exploration</a>
+            </h4>
+        </div>
+        </div class = "pages">
+            <ul class = "nav-links">
+                <li class = "nav_item">
+                    <a href = "/index.html" class = "a nav_link">Home</a>
+                </li>
+                <li class = "nav_item">
+                    <a href = "gallery.html" class = "a nav_link">Gallery</a>
+                </li>
+                <li class = "nav_item">
+                    <a href = "animation.html" class = "a nav_link">Explorations</a>
+                </li>
+                <li class = "nav_item">
+                    <a href = "contact.html" class = "a nav_link activepage">Contact</a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <div class = "contact_container">
+        <div class = "contact_content">
+            <table>
+                <tr>
+                    <td>
+                        <h1>Let's Talk</h1>
+                        <p>Got a question or just wanna get in touch?<br>
+                            Feel free to reach out, and we can get talking!</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <h2>Email</h2>
+                        <p>nakitamray@gmail.com</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <h2>Address</h2>
+                        <p>12345 Imaginary Avenue</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class = "contact_content">
+            <form id = "contactForm" name = "contactForm" onsubmit="validateForm();" target = "_self">
+                <label for = "name"></label>
+                <input type = "text" id ="name" name ="fullName" placeholder = "what do people call you? (its called a name)">
+                <br><br>
+    
+                <label for = "email"></label>
+                <input type = "text" id ="email" name ="emailAddress" onchange = "validateEmail()" placeholder = "where can I email you back?">
+                <br><br>
+        
+                <label for = "message"></label>
+                <textarea id ="message" name ="messageBox" placeholder="what's on your your mind?"></textarea>
+                <br><br>
+        
+                <input id = "submit_btn" type = "submit"/>
+            </form>
+        </div>
+    </div>
+
+<script src="/navbar/navbar.js"></script>
+</body>
+</html>
