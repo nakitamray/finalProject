@@ -8,7 +8,7 @@
 
 /* Hero Section */
 .container-snap {
-	background-image: url(/images/mars_horizon.jpg);
+	background-image: url(../images/mars_horizon.jpg);
 	background-size: cover;
 	background-position: top;
 	position: relative;
