@@ -44,49 +44,51 @@
         </div>
     </nav>
 
-    <div class = "contact_container">
-        <div class = "contact_content">
-            <table>
-                <tr>
-                    <td>
-                        <h1>Let's Talk</h1>
-                        <p>Got a question or just wanna get in touch?<br>
-                            Feel free to reach out, and we can get talking!</p>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <h2>Email</h2>
-                        <p>nakitamray@gmail.com</p>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <h2>Address</h2>
-                        <p>12345 Imaginary Avenue</p>
-                    </td>
-                </tr>
-            </table>
-        </div>
-
-        <div class = "contact_content">
-            <form id = "contactForm" name = "contactForm" onsubmit="validateForm();" target = "_self">
-                <label for = "name"></label>
-                <input type = "text" id ="name" name ="fullName" placeholder = "what do people call you? (its called a name)">
-                <br><br>
+    <div class = "hero3">
+        <div class = "contact_container">
+            <div class = "contact_content">
+                <table>
+                    <tr>
+                        <td>
+                            <h1>Let's Talk</h1>
+                            <p>Got a question or just wanna get in touch?<br>
+                                Feel free to reach out, and we can get talking!</p>
+                        </td>
+                    </tr>
     
-                <label for = "email"></label>
-                <input type = "text" id ="email" name ="emailAddress" onchange = "validateEmail()" placeholder = "where can I email you back?">
-                <br><br>
+                    <tr>
+                        <td>
+                            <h2>Email</h2>
+                            <p>nakitamray@gmail.com</p>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td>
+                            <h2>Address</h2>
+                            <p>12345 Imaginary Avenue</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+    
+            <div class = "contact_content">
+                <form id = "contactForm" name = "contactForm" onsubmit="validateForm();" target = "_self">
+                    <label for = "name"></label>
+                    <input type = "text" id ="name" name ="fullName" placeholder = "what do people call you? (its called a name)">
+                    <br><br>
         
-                <label for = "message"></label>
-                <textarea id ="message" name ="messageBox" placeholder="what's on your your mind?"></textarea>
-                <br><br>
-        
-                <input id = "submit_btn" type = "submit"/>
-            </form>
+                    <label for = "email"></label>
+                    <input type = "text" id ="email" name ="emailAddress" onchange = "validateEmail()" placeholder = "where can I email you back?">
+                    <br><br>
+            
+                    <label for = "message"></label>
+                    <textarea id ="message" name ="messageBox" placeholder="what's on your your mind?"></textarea>
+                    <br><br>
+            
+                    <input id = "submit_btn" type = "submit"/>
+                </form>
+            </div>
         </div>
     </div>
 
